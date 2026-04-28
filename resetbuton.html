@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reset Password</title>
+</head>
+<style>
+ body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, silver, silver);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .reset-container {
+    background: #fff;
+    padding: 30px;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    text-align: center;
+  }
+
+  .reset-container h2 {
+    margin-bottom: 20px;
+    color: #333;
+  }
+
+  .reset-container input {
+    width: 98%;
+    padding: 12px;
+    padding-right: 1px;
+    padding-left: 7px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+  }
+
+  .reset-container input:focus {
+    border-color: #4facfe;
+    outline: none;
+    box-shadow: 0 0 5px rgba(79, 172, 254, 0.5);
+  }
+  .reset-container button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 8px;
+    background: rgb(55, 197, 55);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+
+  .reset-container button:hover {
+    background: rgb(92, 182, 92);
+    transform: translateY(-2px);
+  }
+
+  .reset-container button:active {
+    transform: translateY(0);
+  }
+
+  .reset-container p {
+    margin-top: 15px;
+    font-size: 13px;
+    color: #666;
+  }
+</style>
+</style>
+<body>
+    <div class="reset-container">
+  <h2>Reset Password</h2>
+  <form action="/reset-password" method="POST">
+    <input 
+      type="email" 
+      name="email" 
+      placeholder="Enter your email" 
+      required 
+    />
+    <button type="submit">Send Reset Link</button>
+  </form>
+</div>
+</body>
+</html>

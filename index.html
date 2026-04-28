@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacos Login</title>
+</head>
+<style>
+        body {
+            background-image: url('images/nacos.jpg.png');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            width: 400px;
+            margin: 50px auto;
+            margin-top: 100px;
+            padding-left:  30px;
+            padding-right: 50px;
+            padding-top: 15px;
+            border: 1px solid #ccc;
+            border-radius: 20px;
+            backdrop-filter: blur(15px);
+            background-color: transparent;
+        }
+        .login-btn{
+            display: inline-block;
+            width: 100px;
+            padding: 10px;
+            background-color: green;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            text-decoration: none;
+            text-align: center;
+        }
+        .login-btn:hover {
+            background-color: darkgreen;
+        }
+        .input-field{
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .password-box {
+    position: relative;
+    width: 100%;
+}
+.password-box input {
+    width: 100%;
+    padding: 10px 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.lock-icon {
+    position: absolute;
+    left: 391px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+}
+.eye-icon {
+    position: absolute;
+    right: 3px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+        input {
+            display: block;
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 30px;
+        }
+        button {
+            margin-top: 10px;
+        }
+       img {
+        width: 100px;
+        border-radius: 50px;
+        float: left;
+        margin-right: 20px;
+        margin-bottom: 10px;
+     }
+     .extra-text {
+        font-size: 14px;
+        margin-top: 10px;
+        text-align: center;
+        color: white;
+     }
+     .username {
+        font-weight: bold;
+        color: white;
+     }
+     .colour {
+        color: green;
+     } 
+     .color {
+        color: white;
+     }
+    </style>
+    <head>
+    <body>
+        <div class="container">
+        <img src="images/nacos.png">
+        <p class="username">Hello!</p>
+        <p class="color"> Welcome to NACOS Students Hanbook Portal!</p>
+        <input type="text" placeholder="Enter Mat No" class="input-field">
+        <div class="password-box">
+    <span class="lock-icon"></span>
+   
+    <input type="password" id="password" placeholder="Enter Password">
+   
+    <span class="eye-icon" onclick="togglePassword()">👁️</span>
+</div>
+<script>
+    function togglePassword() {
+        const p = document.getElementById('password');
+        p.type= p.type ==='password'?'text': 'password';
+    }
+</script>
+
+        <a href="dashboard.html" class="login-btn">Login</a>
+        <p class="extra-text">
+    Forgot your password? <a href="resetbuton.html">Click here to reset</a>
+</p>
+
+<p class="extra-text">
+    Don’t have an account? <a href="signup.html">Sign up here</a>
+</p>
+    </body>
+</html>

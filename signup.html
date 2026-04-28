@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sign Up</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, silver, silver);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .signup-container {
+      background: #fff;
+      padding: 30px 25px;
+      border-radius: 8px;
+      width: 320px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+      text-align: center;
+    }
+    .signup-container h2 {
+      margin-bottom: 20px;
+      color: #333;
+    }
+    .signup-container input {
+      width: 98%;
+      padding: 10px;
+      padding-right: 1px;
+      padding-left: 7px;
+      margin-bottom: 12px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 14px;
+      outline: none;
+      transition: border 0.3s ease;
+    }
+
+    .signup-container input:focus {
+      border-color: #007BFF;
+    }
+    .signup-container button {
+      width: 100%;
+      padding: 10px;
+      background: rgb(55, 203, 55);
+      border: none;
+      color: white;
+      font-size: 15px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .signup-container button:hover {
+      background: rgb(55, 203, 55);
+    }
+    .login-link {
+      margin-top: 15px;
+      font-size: 14px;
+      color: #555;
+    }
+
+    .login-link a {
+      color: #007BFF;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .login-link a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="signup-container">
+    <h2>Create Account</h2>
+    <form action="/signup" method="POST">
+      <input type="text" name="name" placeholder="Full Name" required />
+      <input type="email" name="email" placeholder="Email Address" required />
+      <input type="password" name="password" placeholder="Password" required />
+      <input type="password" name="confirm_password" placeholder="Confirm Password" required />
+      <button type="submit">Sign Up</button>
+    </form>
+
+    <p class="login-link">
+      Already have an account?
+      <a href="index.html">Login</a>
+    </p>
+  </div>
+
+</body>
+</html>
